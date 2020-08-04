@@ -22,21 +22,22 @@ export const deletePost = (id, token) => dispatch => {
     fetch('http://127.0.0.1:8000/api/note/')
       .then(result => result.json())
       .then(posts => dispatch({
-        type: DELETE_POSTS,
+        type: DELETE_POST,
         payload: posts
       }));
 }
 
 export const newPost = (post, token) => dispatch => {
-    let apiUrl = 'http://127.0.0.1:8000/api/note/' + id + '/';
+    let apiUrl = 'http://127.0.0.1:8000/api/note/';
     fetch(apiUrl, {
       method: 'POST',
       headers: {
         "X-CSRFToken": token,
-        "Content-Type": "applications/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(post)
     }).catch(error => console.log(error));
+
     fetch('http://127.0.0.1:8000/api/note/')
       .then(result => result.json())
       .then(posts => dispatch({
@@ -51,7 +52,7 @@ export const editPost = (id, patch, token) => dispatch => {
       method: 'PATCH',
       headers: {
         "X-CSRFToken": token,
-        "Content-Type": "applications/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(patch)
     }).catch(error => console.log(error));

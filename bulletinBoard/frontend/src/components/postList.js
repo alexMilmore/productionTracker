@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux';
-import {fetchPosts, deletePost, newPost, editPost} from './actions/postActions';
+import {fetchPosts, deletePost, editPost} from './actions/postActions';
 import store from './store'
 
 class PostList extends Component {
@@ -38,9 +38,14 @@ class PostList extends Component {
     }
     return (
       <div>
+        <div className='jumbotron'>
+          <h3> {this.props.componentTitle} </h3>
+        </div>
         {this.props.posts.map((entry) => (
           <div key={entry.id}>
-            <h1> {entry.title} </h1>
+            <div>
+              <h3> {entry.title} </h3>
+            </div>
             <p> {entry.body} </p>
             <div className="container">
               <div className="row">
