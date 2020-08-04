@@ -21,6 +21,12 @@ When this application is complete it will contain
 - Grouping of posts by catagory
   - allowing searching of tasks by catagory and if completed
   
+- Developer accounts
+  - Developer acconts with priviliges to complete tasks, report bugs and suggest features
+ 
+ - Manager accounts
+   - Manager accounts with the ability to assign tasks to developers and view analytics showing the productivity of developers.
+  
 # Deadline
 - The minimum product of this application will be completed by Monday 10th of August 2020. 
 Further features may be added after this time, however expect a working repositry by then.
