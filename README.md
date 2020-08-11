@@ -28,5 +28,4 @@ When this application is complete it will contain
    - Manager accounts with the ability to assign tasks to developers and view analytics showing the productivity of developers.
   
 # Deadline
-- The minimum product of this application will be completed by Monday 10th of August 2020. 
-Further features may be added after this time, however expect a working repositry by then.
+- Due to multiple job application tests this project has been postponed until further notice
